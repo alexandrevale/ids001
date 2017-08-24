@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <title>Exercício do Quadrado</title>
+    </head>
+    <body>
+        <!--
+        2) Faça uma classe chamada Quadrado. Todo Quadrado pode calcular área
+        e perímetro. Monte uma página, single page, que mostre o resultado
+        do cálculo de área ou perímetro a partir de um botão (Um botão para cada).
+        -->
+        <h1>Quadrado</h1>
+        <h2>Informações</h2>
+        <form name="calcular" method="POST">
+            <label fot="lado">Informe um lado do quadrado</label>
+            <input type="text" name="lado" id="lado">
+        </form>
+        <h2>Calcular</h2>
+        <button id="area">Área</button>
+        <button id="perimetro">Perímetro</button>
+        <h2>Resultado</h2>
+        <p id="resultadoArea"></p><br>
+        <p id="resultadoPerimetro"></p>
+    </body>
+</html>

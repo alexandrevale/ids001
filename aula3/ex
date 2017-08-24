@@ -1,0 +1,10 @@
+1) Um revolver possui uma quantidade máxima de
+munição. Ele pode atirar, uma bala por vez, ou
+recarregar, uma por vez. Um revolver só atira
+se houver munição e recarrega se a quantidade
+de munição não for a máxima.
+Implemente esta situação.
+
+2) Faça uma classe chamada Quadrado. Todo Quadrado pode calcular área
+e perímetro. Monte uma página, single page, que mostre o resultado
+do cálculo de área ou perímetro a partir de um botão (Um botão para cada).
