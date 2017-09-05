@@ -3,16 +3,19 @@
 ## Acesso para atributo
 
 * Leitura (get): obtenção de um valor. 
+
     Exemplo: $var = $this->atributo + 1;
     Exemplo: echo $this->atributo;
     Exemplo: $this->metodo($atributo);
 * Escrita (set): quando inicializamos ou modificamos um atributo.
+
     Exemplo: $this->atributo = 5;
     Exemplo: $this->atributo = $this->atributo + 5;
 
 ## Acesso para método
 
 * Chamada
+
     Exemplo: $this->metodo();
 
 ## Níveis de proteção
@@ -30,15 +33,18 @@ Observação: no JAVA temos mais um modificador de acesso. Consultar: https://do
 
 ### "GETTER"
 Permite acesso de **leitura** em um atributo.
-    ``` 
-    public function getAtributo(){
-        return $this->atributo;
-    }
-    ```
+
+``` 
+public function getAtributo(){
+    return $this->atributo;
+}
+```
+
 ### "SETTER"
 Permite acesso de **escrita** em um atributo.
-    ``` 
-    public function setAtributo($atributo){
-        $this->atributo = $atributo;
-    }
-    ```
+
+``` 
+public function setAtributo($atributo){
+    $this->atributo = $atributo;
+}
+```
