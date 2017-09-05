@@ -26,3 +26,19 @@ O acesso é liberado apenas para a própria classe.
 
 Observação: no JAVA temos mais um modificador de acesso. Consultar: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 
+## Métodos acessores (GETTERS e SETTERS)
+
+### "GETTER"
+Permite acesso de **leitura** em um atributo.
+    ``` 
+    public function getAtributo(){
+        return $this->atributo;
+    }
+    ```
+### "SETTER"
+Permite acesso de **escrita** em um atributo.
+    ``` 
+    public function setAtributo($atributo){
+        $this->atributo = $atributo;
+    }
+    ```
