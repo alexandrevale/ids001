@@ -5,11 +5,15 @@
 * Leitura (get): obtenção de um valor. 
 
     Exemplo: $var = $this->atributo + 1;
+    
     Exemplo: echo $this->atributo;
+    
     Exemplo: $this->metodo($atributo);
+    
 * Escrita (set): quando inicializamos ou modificamos um atributo.
 
     Exemplo: $this->atributo = 5;
+    
     Exemplo: $this->atributo = $this->atributo + 5;
 
 ## Acesso para método
@@ -27,7 +31,7 @@ O acesso é liberado para a própria classe e suas subclasses.
 ### Private
 O acesso é liberado apenas para a própria classe.
 
-Observação: no JAVA temos mais um modificador de acesso. Consultar: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+Observação: no JAVA temos mais um modificador de acesso. [Consultar documentação](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
 
 ## Métodos acessores (GETTERS e SETTERS)
 
@@ -48,3 +52,6 @@ public function setAtributo($atributo){
     $this->atributo = $atributo;
 }
 ```
+
+##Modificador static
+Desacopla o membro da instância, ou seja, ele vira o membro da classe.
