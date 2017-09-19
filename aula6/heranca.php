@@ -34,7 +34,6 @@
                echo $this->a3;   //S
             }
         }
-        
         $a = new A();
         $b = new B();
         $b->metodo3();
@@ -45,4 +44,3 @@
     ?>
 </body>
 </html>
-
