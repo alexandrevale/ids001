@@ -13,10 +13,10 @@
 * Relação estática
 
 ### Exemplo
-<img diagrama>
+![Diagrama do exemplo1](aula6/img1.png "")
 
 ## Sobrescrita (Override)
 É quando dois métodos partilham do mesmo nome e assinatura. Eles são diferenciados pela classe aos quais residem;
 Entre essas classes deve ocorrer uma relação de herança para que isso aconteça.
-<img sobrescrita>
+![Diagrama com Override](aula6/img2.png "")
 O tarifar de Cliente será "escondido" quando algum tarifar() de alguma subclasse for chamado.
