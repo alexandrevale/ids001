@@ -25,10 +25,9 @@
             public function getDuracao(){
                 return $this->duracao;
             }
-    
         }
         class Aluno{
-            private $nome, $curso, $completa;
+            private $nome, $curso, $chcompleta;
             //A classe curso estará representada na var $curso ou como parâmetro.
             public function __construct($nome, $curso, $chcompleta){
                 $this->nome = $nome;
@@ -40,7 +39,6 @@
                 echo "<h2>Aluno</h2>";
                 echo "<ul><li>Nome: $this->nome";
                 echo "<li>Carga Horária Completa: $this->chcompleta";
-
             }
             public function estaFormado(){
                 echo "<li>";

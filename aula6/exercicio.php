@@ -31,10 +31,24 @@
                 return $this->saldo;
             }
         }
+        class Cliente{
+            private $conta;
+            //Desta forma indicamos que o parâmetro que será instanciado deverá ser do tipo Conta.
+            public function __construct(Conta $conta){
+                $this->conta = $conta;
+            }
+            public function getConta(){
+                return $this->conta;
+            }
+            public function tarifar(){
+                $calc = $this->conta->getSaldo();
+                echo $calc;
+            }            
+        }
         class Vip extends Cliente{
             public function __construct(Conta $conta){
                 //super(conta);
-                parent::__construct($conta);
+                parent::__construct($conta); //Executa o construtor da classe pai, no caso Conta.
             }
             // public function tarifarVip(){
             //     $calc = $this->getConta()->getSaldo()*0.96;  
@@ -64,21 +78,7 @@
                 $calc = $this->getConta()->getSaldo()*0.99;  
                 echo $calc;
             }              
-        }
-        class Cliente{
-            private $conta;
-            //Desta forma indicamos que o parâmetro que será instanciado deverá ser do tipo Conta.
-            public function __construct(Conta $conta){
-                $this->conta = $conta;
-            }
-            public function getConta(){
-                return $this->conta;
-            }
-            public function tarifar(){
-                $calc = $this->conta->getSaldo();
-                echo $calc;
-            }            
-        }
+        }        
         class Banco{
             public function executarTarifa(Conta $conta, $tipo){
                 //Como melhorar o método:

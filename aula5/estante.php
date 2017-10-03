@@ -8,9 +8,6 @@
 </head>
 <body>
     <?php  
-        /*
-        A classe Aluno tem um e sua referência $curso possui acesso a todos os membros públicos da classe Curso.
-        */
         class Estante{
             //Estante tem N livros
             private $categoria, $livros, $qt, $qtMax;

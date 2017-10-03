@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aula 4</title>
 </head>
 <body>
     <?php    
-        class acesso{
+        class Acesso{
             public $a;
             private $b; //Uma boa prática é utilizar atributo privado
             public function teste(){
@@ -24,20 +22,18 @@
                 return $this->b;
             }
             public function setB($b){
-                $this->b = 5;
+                $this->b = 10;
                 echo "<h3>Método teste set</h3>";
-                echo "<h3>$this->b</h3>";
+                echo "<em>$this->b</em>";
             }
         }
         $obj1 = new Acesso();
         $obj1->a = 7;                    //Acesso de escrita
-        echo "<h2>$obj1->a</h2>";        //Acesso de leitura
+        echo $obj1->a;        //Acesso de leitura
         $obj1->teste();                  //Acesso de chamada
         $obj2 = new Acesso();
         $a = $obj2->getB();
         echo "$a";
-        
     ?>
 </body>
 </html>
-

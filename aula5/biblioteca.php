@@ -17,10 +17,7 @@ a) listarFilosofia(): Lista todos os livros de filosofia
 
 b) listarTudo(): Lista todos os livros de todas as estantes
 
-c) contarFiccao(): Conta quantos livros há de ficcao
-
-
-        */
+c) contarFiccao(): Conta quantos livros há de ficcao*/
         class Biblioteca{
             private $nome, $estantes;
             public function __construct($nome){
@@ -103,7 +100,6 @@ c) contarFiccao(): Conta quantos livros há de ficcao
             const FILOSOFIA = "Filosofia";
             const FICCAO = "Ficção";
         }
-
         $livro1 = new Livro("Critica da Razão Pura", "Kant", Categoria::FILOSOFIA);
         $livro2 = new Livro("A Divina Comédia", "Dante Alighieri", Categoria::FICCAO);
         $livro3 = new Livro("Gaia Ciencia", "Nietzsche", Categoria::FILOSOFIA);
@@ -120,7 +116,7 @@ c) contarFiccao(): Conta quantos livros há de ficcao
         $estante1->colocarLivro($livro6);
         $estante1->listarLivros();
         echo "<h1>Biblioteca</h1>";
-        $b1 = new Biblioteca("ARRIDIS");
+        $b1 = new Biblioteca("Minha Biblioteca");
         $b1->inserirEstante($estante1);
         $b1->inserirEstante($estante2);
         $b1->listarFilosofia();
