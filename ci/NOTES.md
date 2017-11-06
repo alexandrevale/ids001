@@ -42,7 +42,7 @@ mysql-ctl start
 ```
 
 #### Acesso
-https://nomeDoWorkspace-nomeDeUsuario.c9users.io/phpmyadmin/
+https://nomeDoWorkspace.nomeDeUsuario.c9users.io/phpmyadmin/
 
 Exemplo: http://ids001.alexdovale.c9users.io/phpmyadmin/
 
